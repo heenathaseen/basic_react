@@ -1,21 +1,30 @@
 import React from 'react';
 import './app.css';
 
-const Red = () => (
-  <div className="red">
-    <p>RED</p>
+const Red = ({ title, bg }) => (
+  <div
+    className="red"
+    style={{ background: bg }}
+  >
+    <p>{title}</p>
   </div>
 );
 
-const Green = () => (
-  <div className="green">
-    <p>green</p>
+const Green = ({ title, bg }) => (
+  <div
+    className="green"
+    style={{ background: bg }}
+  >
+    <p>{title}</p>
   </div>
 );
 
-const Blue = () => (
-  <div className="blue">
-    <p>blue</p>
+const Blue = ({ title, bg }) => (
+  <div
+    className="blue"
+    style={{ background: bg }}
+  >
+    <p>{title}</p>
   </div>
 );
 
@@ -23,9 +32,9 @@ const Blue = () => (
 const App = () => (
   <div className="app">
     <p>hello</p>
-    <Red />
-    <Green />
-    <Blue />
+    <Red title="red" bg="red" />
+    <Green title="green" bg="green" />
+    <Blue title="blue" bg="blue" />
 
   </div>
 
